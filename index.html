@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baserow Data</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .row {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Baserow Data</h1>
+    <div id="data"></div>
+
+    <script>
+        // Fetch and display the data
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                const dataDiv = document.getElementById('data');
+                data.results.forEach((row, index) => {
+                    const rowDiv = document.createElement('div');
+                    rowDiv.className = 'row';
+                    rowDiv.innerHTML = `
+                        <h3>Row ${index + 1}</h3>
+                        <pre>${JSON.stringify(row, null, 2)}</pre>
+                    `;
+                    dataDiv.appendChild(rowDiv);
+                });
+            })
+            .catch(error => console.error('Error loading data:', error));
+    </script>
+</body>
+</html>
