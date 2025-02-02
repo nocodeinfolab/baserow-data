@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Baserow Data</title>
+    <title>Baserow Data Analysis</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -15,15 +15,22 @@
             border: 1px solid #ddd;
             border-radius: 5px;
         }
+        .chart {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
-    <h1>Baserow Data</h1>
+    <h1>Baserow Data Analysis</h1>
     <div id="data">Loading data...</div>
+    <div class="chart">
+        <h2>Sentiment Distribution</h2>
+        <img src="chart.png" alt="Sentiment Distribution Chart" width="600">
+    </div>
 
     <script>
-        // Fetch and display the data
-        fetch('data.json')
+        // Fetch and display the analysis results
+        fetch('analysis_results.json')
             .then(response => {
                 if (!response.ok) {
                     throw new Error('Failed to load data');
@@ -34,13 +41,14 @@
                 const dataDiv = document.getElementById('data');
                 dataDiv.innerHTML = ''; // Clear the loading message
 
-                if (data.results && data.results.length > 0) {
-                    data.results.forEach((row, index) => {
+                if (data.length > 0) {
+                    data.forEach((row, index) => {
                         const rowDiv = document.createElement('div');
                         rowDiv.className = 'row';
                         rowDiv.innerHTML = `
                             <h3>Row ${index + 1}</h3>
-                            <pre>${JSON.stringify(row, null, 2)}</pre>
+                            <p><strong>Text:</strong> ${row.text}</p>
+                            <p><strong>Sentiment:</strong> ${row.sentiment} (Score: ${row.score})</p>
                         `;
                         dataDiv.appendChild(rowDiv);
                     });
