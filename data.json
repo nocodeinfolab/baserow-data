@@ -1,0 +1,898 @@
+{
+    "count": 15,
+    "next": null,
+    "previous": null,
+    "results": [
+        {
+            "id": 81,
+            "order": "1.00000000000000000000",
+            "Transaction ID": "10081",
+            "Client Name": [
+                {
+                    "id": 1,
+                    "value": "Mr Chike Steve",
+                    "order": "1.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 2,
+                    "value": "156 - N100000",
+                    "order": "2.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-28",
+            "Expected Check-out Date": "2025-01-30",
+            "Duration of Stay": "2",
+            "Price per Night": "100000.00",
+            "Total Amount": "200000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "200000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "0.00",
+            "Balance Payment": "200000.00",
+            "Balance Payment Date": "2025-02-02",
+            "Room Parameter ID": "2",
+            "Client Check-in": [
+                {
+                    "id": 28,
+                    "value": "Mr Chike Steve",
+                    "order": "1.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 2,
+                    "value": "156"
+                }
+            ],
+            "Date of Booking": "2025-01-28T21:26:18.802798Z",
+            "Date to text": "28/01/2025 10:26 PM",
+            "User": "",
+            "Reservation PID": "81",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": "",
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 2,
+                    "value": "156"
+                }
+            ],
+            "Room Number join": "156"
+        },
+        {
+            "id": 82,
+            "order": "2.00000000000000000000",
+            "Transaction ID": "10082",
+            "Client Name": [
+                {
+                    "id": 67,
+                    "value": "Ms Happiness Smith",
+                    "order": "4.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 4,
+                    "value": "145 - N175000",
+                    "order": "4.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-29",
+            "Expected Check-out Date": "2025-01-30",
+            "Duration of Stay": "1",
+            "Price per Night": "175000.00",
+            "Total Amount": "175000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "175000.00",
+            "Amount Paid": "100000.00",
+            "Pending Amount": "75000.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "4",
+            "Client Check-in": [
+                {
+                    "id": 29,
+                    "value": "Ms Happiness Smith",
+                    "order": "2.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 4,
+                    "value": "145"
+                }
+            ],
+            "Date of Booking": "2025-01-28T21:30:51.210810Z",
+            "Date to text": "28/01/2025 10:30 PM",
+            "User": "",
+            "Reservation PID": "82",
+            "Cash Payment": "100000.00",
+            "Bank Transfer": null,
+            "Balance Receiver": null,
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 4,
+                    "value": "145"
+                }
+            ],
+            "Room Number join": "145"
+        },
+        {
+            "id": 83,
+            "order": "3.00000000000000000000",
+            "Transaction ID": "10083",
+            "Client Name": [
+                {
+                    "id": 34,
+                    "value": "Mr John James",
+                    "order": "3.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 3,
+                    "value": "136 - N150000",
+                    "order": "3.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-29",
+            "Expected Check-out Date": "2025-01-31",
+            "Duration of Stay": "2",
+            "Price per Night": "150000.00",
+            "Total Amount": "300000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "300000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "0.00",
+            "Balance Payment": "300000.00",
+            "Balance Payment Date": "2025-02-02",
+            "Room Parameter ID": "3",
+            "Client Check-in": [
+                {
+                    "id": 30,
+                    "value": "Mr John James",
+                    "order": "3.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 3,
+                    "value": "136"
+                }
+            ],
+            "Date of Booking": "2025-01-28T21:31:52.988005Z",
+            "Date to text": "28/01/2025 10:31 PM",
+            "User": "",
+            "Reservation PID": "83",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": "",
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 3,
+                    "value": "136"
+                }
+            ],
+            "Room Number join": "136"
+        },
+        {
+            "id": 84,
+            "order": "4.00000000000000000000",
+            "Transaction ID": "10084",
+            "Client Name": [
+                {
+                    "id": 100,
+                    "value": "Mr Okechukwu Abagan",
+                    "order": "5.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 5,
+                    "value": "150 - N60000",
+                    "order": "5.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-28",
+            "Expected Check-out Date": "2025-01-31",
+            "Duration of Stay": "3",
+            "Price per Night": "60000.00",
+            "Total Amount": "180000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "180000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "0.00",
+            "Balance Payment": "180000.00",
+            "Balance Payment Date": "2025-02-02",
+            "Room Parameter ID": "5",
+            "Client Check-in": [
+                {
+                    "id": 31,
+                    "value": "Mr Okechukwu Abagan",
+                    "order": "4.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 5,
+                    "value": "150"
+                }
+            ],
+            "Date of Booking": "2025-01-28T21:42:22.115503Z",
+            "Date to text": "28/01/2025 10:42 PM",
+            "User": "",
+            "Reservation PID": "84",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": "",
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 5,
+                    "value": "150"
+                }
+            ],
+            "Room Number join": "150"
+        },
+        {
+            "id": 85,
+            "order": "5.00000000000000000000",
+            "Transaction ID": "10085",
+            "Client Name": [
+                {
+                    "id": 101,
+                    "value": "Mr Emmanuel Okechukwu",
+                    "order": "6.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 5,
+                    "value": "150 - N60000",
+                    "order": "5.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-31",
+            "Expected Check-out Date": "2025-02-02",
+            "Duration of Stay": "2",
+            "Price per Night": "60000.00",
+            "Total Amount": "120000.00",
+            "Confirmed": true,
+            "Discount (%)": "10",
+            "Payable Amount": "108000.00",
+            "Amount Paid": "54000.00",
+            "Pending Amount": "54000.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "5",
+            "Client Check-in": [
+                {
+                    "id": 33,
+                    "value": "Mr Emmanuel Okechukwu",
+                    "order": "6.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 5,
+                    "value": "150"
+                }
+            ],
+            "Date of Booking": "2025-01-29T18:44:21.437971Z",
+            "Date to text": "29/01/2025 07:44 PM",
+            "User": "chike",
+            "Reservation PID": "85",
+            "Cash Payment": "54000.00",
+            "Bank Transfer": null,
+            "Balance Receiver": null,
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 5,
+                    "value": "150"
+                }
+            ],
+            "Room Number join": "150"
+        },
+        {
+            "id": 87,
+            "order": "7.00000000000000000000",
+            "Transaction ID": "10087",
+            "Client Name": [
+                {
+                    "id": 34,
+                    "value": "Mr John James",
+                    "order": "3.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 2,
+                    "value": "156 - N100000",
+                    "order": "2.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-30",
+            "Expected Check-out Date": "2025-02-01",
+            "Duration of Stay": "2",
+            "Price per Night": "100000.00",
+            "Total Amount": "200000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "200000.00",
+            "Amount Paid": "200000.00",
+            "Pending Amount": "0.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "2",
+            "Client Check-in": [
+                {
+                    "id": 34,
+                    "value": "Mr John James",
+                    "order": "7.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 2,
+                    "value": "156"
+                }
+            ],
+            "Date of Booking": "2025-01-29T19:12:23.178697Z",
+            "Date to text": "29/01/2025 08:12 PM",
+            "User": "chike",
+            "Reservation PID": "87",
+            "Cash Payment": "200000.00",
+            "Bank Transfer": null,
+            "Balance Receiver": null,
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 2,
+                    "value": "156"
+                }
+            ],
+            "Room Number join": "156"
+        },
+        {
+            "id": 88,
+            "order": "8.00000000000000000000",
+            "Transaction ID": "10088",
+            "Client Name": [
+                {
+                    "id": 100,
+                    "value": "Mr Okechukwu Abagan",
+                    "order": "5.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 4,
+                    "value": "145 - N175000",
+                    "order": "4.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-30",
+            "Expected Check-out Date": "2025-01-31",
+            "Duration of Stay": "1",
+            "Price per Night": "175000.00",
+            "Total Amount": "175000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "175000.00",
+            "Amount Paid": "175000.00",
+            "Pending Amount": "0.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "4",
+            "Client Check-in": [
+                {
+                    "id": 36,
+                    "value": "Mr Okechukwu Abagan",
+                    "order": "9.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 4,
+                    "value": "145"
+                }
+            ],
+            "Date of Booking": "2025-01-29T19:14:11.799942Z",
+            "Date to text": "29/01/2025 08:14 PM",
+            "User": "",
+            "Reservation PID": "88",
+            "Cash Payment": "175000.00",
+            "Bank Transfer": null,
+            "Balance Receiver": null,
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 4,
+                    "value": "145"
+                }
+            ],
+            "Room Number join": "145"
+        },
+        {
+            "id": 90,
+            "order": "10.00000000000000000000",
+            "Transaction ID": "10090",
+            "Client Name": [
+                {
+                    "id": 67,
+                    "value": "Ms Happiness Smith",
+                    "order": "4.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 1,
+                    "value": "120 - N60000",
+                    "order": "1.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-30",
+            "Expected Check-out Date": "2025-01-31",
+            "Duration of Stay": "1",
+            "Price per Night": "60000.00",
+            "Total Amount": "60000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "60000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "60000.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "1",
+            "Client Check-in": [
+                {
+                    "id": 35,
+                    "value": "Ms Happiness Smith",
+                    "order": "8.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 1,
+                    "value": "120"
+                }
+            ],
+            "Date of Booking": "2025-01-30T03:08:21.240578Z",
+            "Date to text": "30/01/2025 04:08 AM",
+            "User": "",
+            "Reservation PID": "90",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": null,
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 1,
+                    "value": "120"
+                }
+            ],
+            "Room Number join": "120"
+        },
+        {
+            "id": 92,
+            "order": "12.00000000000000000000",
+            "Transaction ID": "10092",
+            "Client Name": [
+                {
+                    "id": 34,
+                    "value": "Mr John James",
+                    "order": "3.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 67,
+                    "value": "200 - N25000",
+                    "order": "7.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-31",
+            "Expected Check-out Date": "2025-02-01",
+            "Duration of Stay": "1",
+            "Price per Night": "25000.00",
+            "Total Amount": "25000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "25000.00",
+            "Amount Paid": "25000.00",
+            "Pending Amount": "0.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "67",
+            "Client Check-in": [
+                {
+                    "id": 38,
+                    "value": "Mr John James",
+                    "order": "11.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 67,
+                    "value": "200"
+                }
+            ],
+            "Date of Booking": "2025-01-30T19:01:18.529835Z",
+            "Date to text": "30/01/2025 08:01 PM",
+            "User": "",
+            "Reservation PID": "92",
+            "Cash Payment": "25000.00",
+            "Bank Transfer": null,
+            "Balance Receiver": null,
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 67,
+                    "value": "200"
+                }
+            ],
+            "Room Number join": "200"
+        },
+        {
+            "id": 93,
+            "order": "13.00000000000000000000",
+            "Transaction ID": "10093",
+            "Client Name": [
+                {
+                    "id": 102,
+                    "value": "Mr Mandela Joe",
+                    "order": "7.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 70,
+                    "value": "240 - N28000",
+                    "order": "10.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-02-01",
+            "Expected Check-out Date": "2025-02-09",
+            "Duration of Stay": "8",
+            "Price per Night": "28000.00",
+            "Total Amount": "224000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "224000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "224000.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "70",
+            "Client Check-in": [],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 70,
+                    "value": "240"
+                }
+            ],
+            "Date of Booking": "2025-01-30T22:29:30.495214Z",
+            "Date to text": "30/01/2025 11:29 PM",
+            "User": "",
+            "Reservation PID": "93",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": "",
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 70,
+                    "value": "240"
+                }
+            ],
+            "Room Number join": "240"
+        },
+        {
+            "id": 94,
+            "order": "14.00000000000000000000",
+            "Transaction ID": "10094",
+            "Client Name": [
+                {
+                    "id": 101,
+                    "value": "Mr Emmanuel Okechukwu",
+                    "order": "6.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 69,
+                    "value": "190 - N30000",
+                    "order": "9.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-01-31",
+            "Expected Check-out Date": "2025-03-12",
+            "Duration of Stay": "40",
+            "Price per Night": "30000.00",
+            "Total Amount": "1200000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "1200000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "1200000.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "69",
+            "Client Check-in": [],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 69,
+                    "value": "190"
+                }
+            ],
+            "Date of Booking": "2025-01-30T22:30:31.065856Z",
+            "Date to text": "30/01/2025 11:30 PM",
+            "User": "",
+            "Reservation PID": "94",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": "",
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 69,
+                    "value": "190"
+                }
+            ],
+            "Room Number join": "190"
+        },
+        {
+            "id": 95,
+            "order": "15.00000000000000000000",
+            "Transaction ID": "10095",
+            "Client Name": [
+                {
+                    "id": 100,
+                    "value": "Mr Okechukwu Abagan",
+                    "order": "5.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 2,
+                    "value": "156 - N100000",
+                    "order": "2.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-02-11",
+            "Expected Check-out Date": "2025-02-19",
+            "Duration of Stay": "8",
+            "Price per Night": "100000.00",
+            "Total Amount": "800000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "800000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "800000.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "2",
+            "Client Check-in": [],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 2,
+                    "value": "156"
+                }
+            ],
+            "Date of Booking": "2025-01-31T22:32:19.047799Z",
+            "Date to text": "31/01/2025 11:32 PM",
+            "User": "",
+            "Reservation PID": "95",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": "",
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 2,
+                    "value": "156"
+                }
+            ],
+            "Room Number join": "156"
+        },
+        {
+            "id": 96,
+            "order": "16.00000000000000000000",
+            "Transaction ID": "10096",
+            "Client Name": [
+                {
+                    "id": 102,
+                    "value": "Mr Mandela Joe",
+                    "order": "7.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 70,
+                    "value": "240 - N28000",
+                    "order": "10.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-02-23",
+            "Expected Check-out Date": "2025-02-26",
+            "Duration of Stay": "3",
+            "Price per Night": "28000.00",
+            "Total Amount": "84000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "84000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "84000.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "70",
+            "Client Check-in": [],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 70,
+                    "value": "240"
+                }
+            ],
+            "Date of Booking": "2025-01-31T22:33:26.075046Z",
+            "Date to text": "31/01/2025 11:33 PM",
+            "User": "",
+            "Reservation PID": "96",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": "",
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 70,
+                    "value": "240"
+                }
+            ],
+            "Room Number join": "240"
+        },
+        {
+            "id": 97,
+            "order": "17.00000000000000000000",
+            "Transaction ID": "10097",
+            "Client Name": [
+                {
+                    "id": 1,
+                    "value": "Mr Chike Steve",
+                    "order": "1.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 3,
+                    "value": "136 - N150000",
+                    "order": "3.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-02-04",
+            "Expected Check-out Date": "2025-02-07",
+            "Duration of Stay": "3",
+            "Price per Night": "150000.00",
+            "Total Amount": "450000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "450000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "450000.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "3",
+            "Client Check-in": [
+                {
+                    "id": 67,
+                    "value": "Mr Chike Steve",
+                    "order": "12.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 3,
+                    "value": "136"
+                }
+            ],
+            "Date of Booking": "2025-02-02T21:02:23.329256Z",
+            "Date to text": "02/02/2025 10:02 PM",
+            "User": "",
+            "Reservation PID": "97",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": null,
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 3,
+                    "value": "136"
+                }
+            ],
+            "Room Number join": "136"
+        },
+        {
+            "id": 98,
+            "order": "18.00000000000000000000",
+            "Transaction ID": "10098",
+            "Client Name": [
+                {
+                    "id": 67,
+                    "value": "Ms Happiness Smith",
+                    "order": "4.00000000000000000000"
+                }
+            ],
+            "Room": [
+                {
+                    "id": 69,
+                    "value": "190 - N30000",
+                    "order": "9.00000000000000000000"
+                }
+            ],
+            "Expected Check-in Date": "2025-02-05",
+            "Expected Check-out Date": "2025-02-09",
+            "Duration of Stay": "4",
+            "Price per Night": "30000.00",
+            "Total Amount": "120000.00",
+            "Confirmed": true,
+            "Discount (%)": null,
+            "Payable Amount": "120000.00",
+            "Amount Paid": "0.00",
+            "Pending Amount": "120000.00",
+            "Balance Payment": null,
+            "Balance Payment Date": "",
+            "Room Parameter ID": "69",
+            "Client Check-in": [
+                {
+                    "id": 68,
+                    "value": "Ms Happiness Smith",
+                    "order": "13.00000000000000000000"
+                }
+            ],
+            "Confirmed (Formula)": "yes",
+            "Room Number": [
+                {
+                    "id": 69,
+                    "value": "190"
+                }
+            ],
+            "Date of Booking": "2025-02-02T21:03:03.631432Z",
+            "Date to text": "02/02/2025 10:03 PM",
+            "User": "",
+            "Reservation PID": "98",
+            "Cash Payment": null,
+            "Bank Transfer": null,
+            "Balance Receiver": null,
+            "Today": "2025-02-02",
+            "Room Number totext": [
+                {
+                    "id": 69,
+                    "value": "190"
+                }
+            ],
+            "Room Number join": "190"
+        }
+    ]
+}
