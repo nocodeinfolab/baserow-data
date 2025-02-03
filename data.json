@@ -32,7 +32,7 @@
             "Amount Paid": "0.00",
             "Pending Amount": "0.00",
             "Balance Payment": "200000.00",
-            "Balance Payment Date": "2025-02-02",
+            "Balance Payment Date": "2025-02-03",
             "Room Parameter ID": "2",
             "Client Check-in": [
                 {
@@ -55,7 +55,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": "",
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 2,
@@ -116,7 +116,7 @@
             "Cash Payment": "100000.00",
             "Bank Transfer": null,
             "Balance Receiver": null,
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 4,
@@ -154,7 +154,7 @@
             "Amount Paid": "0.00",
             "Pending Amount": "0.00",
             "Balance Payment": "300000.00",
-            "Balance Payment Date": "2025-02-02",
+            "Balance Payment Date": "2025-02-03",
             "Room Parameter ID": "3",
             "Client Check-in": [
                 {
@@ -177,7 +177,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": "",
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 3,
@@ -215,7 +215,7 @@
             "Amount Paid": "0.00",
             "Pending Amount": "0.00",
             "Balance Payment": "180000.00",
-            "Balance Payment Date": "2025-02-02",
+            "Balance Payment Date": "2025-02-03",
             "Room Parameter ID": "5",
             "Client Check-in": [
                 {
@@ -238,7 +238,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": "",
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 5,
@@ -299,7 +299,7 @@
             "Cash Payment": "54000.00",
             "Bank Transfer": null,
             "Balance Receiver": null,
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 5,
@@ -360,7 +360,7 @@
             "Cash Payment": "200000.00",
             "Bank Transfer": null,
             "Balance Receiver": null,
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 2,
@@ -421,7 +421,7 @@
             "Cash Payment": "175000.00",
             "Bank Transfer": null,
             "Balance Receiver": null,
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 4,
@@ -482,7 +482,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": null,
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 1,
@@ -543,7 +543,7 @@
             "Cash Payment": "25000.00",
             "Bank Transfer": null,
             "Balance Receiver": null,
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 67,
@@ -598,7 +598,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": "",
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 70,
@@ -653,7 +653,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": "",
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 69,
@@ -708,7 +708,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": "",
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 2,
@@ -763,7 +763,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": "",
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 70,
@@ -824,7 +824,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": null,
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 3,
@@ -885,7 +885,7 @@
             "Cash Payment": null,
             "Bank Transfer": null,
             "Balance Receiver": null,
-            "Today": "2025-02-02",
+            "Today": "2025-02-03",
             "Room Number totext": [
                 {
                     "id": 69,
