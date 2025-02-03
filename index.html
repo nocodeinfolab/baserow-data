@@ -24,41 +24,28 @@
     <h1>Baserow Data Analysis</h1>
     <div id="data">Loading data...</div>
     <div class="chart">
-        <h2>Sentiment Distribution</h2>
-        <img src="chart.png" alt="Sentiment Distribution Chart" width="600">
-    </div>
+        <h2>Analysis Results</h2>
+        <div id="analysis-results">Loading insights...</div>
+    </div> <!-- Closing .chart div -->
 
     <script>
-        // Fetch and display the analysis results
         fetch('analysis_results.json')
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error('Failed to load data');
-                }
-                return response.json();
-            })
+            .then(response => response.json())
             .then(data => {
-                const dataDiv = document.getElementById('data');
-                dataDiv.innerHTML = ''; // Clear the loading message
+                const resultsDiv = document.getElementById('analysis-results');
+                resultsDiv.innerHTML = ''; 
 
-                if (data.length > 0) {
-                    data.forEach((row, index) => {
-                        const rowDiv = document.createElement('div');
-                        rowDiv.className = 'row';
-                        rowDiv.innerHTML = `
-                            <h3>Row ${index + 1}</h3>
-                            <p><strong>Text:</strong> ${row.text}</p>
-                            <p><strong>Sentiment:</strong> ${row.sentiment} (Score: ${row.score})</p>
-                        `;
-                        dataDiv.appendChild(rowDiv);
-                    });
-                } else {
-                    dataDiv.innerHTML = '<p>No data found.</p>';
+                for (const [key, value] of Object.entries(data)) {
+                    if (typeof value === 'string' && value.endsWith('.png')) {
+                        resultsDiv.innerHTML += `<h3>${key.replace(/_/g, ' ')}</h3><img src="${value}" width="600"><br>`;
+                    } else {
+                        resultsDiv.innerHTML += `<p><strong>${key.replace(/_/g, ' ')}:</strong> ${JSON.stringify(value)}</p>`;
+                    }
                 }
             })
             .catch(error => {
-                console.error('Error loading data:', error);
-                document.getElementById('data').innerHTML = `<p>Error loading data: ${error.message}</p>`;
+                console.error('Error loading analysis results:', error);
+                document.getElementById('analysis-results').innerHTML = `<p>Error loading insights.</p>`;
             });
     </script>
 </body>
