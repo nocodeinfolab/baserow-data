@@ -1,27 +1,25 @@
-import requests
 import json
 import matplotlib.pyplot as plt
 import pandas as pd
+from transformers import pipeline
 
 # Load data from the exported file
 with open('data.json', 'r') as file:
     data = json.load(file)
 
-# Example: Analyze text sentiment using DeepSeek API
+# Initialize Hugging Face sentiment analysis pipeline
+classifier = pipeline("sentiment-analysis")
+
+# Analyze data using Hugging Face
 analysis_results = []
 for row in data['results']:
     text = row['your_text_field']  # Replace with your actual field name
-    response = requests.post(
-        "https://api.deepseek.com/v1/analyze",
-        headers={"Authorization": f"Bearer {DEEPSEEK_API_KEY}"},
-        json={"text": text, "task": "sentiment_analysis"}
-    )
-    result = response.json()
+    result = classifier(text)[0]
     analysis_results.append({
         "row_id": row['id'],
         "text": text,
-        "sentiment": result.get('sentiment', 'neutral'),
-        "score": result.get('score', 0)
+        "sentiment": result['label'],
+        "score": result['score']
     })
 
 # Save analysis results to a JSON file
