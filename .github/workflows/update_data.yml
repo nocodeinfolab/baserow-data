@@ -27,11 +27,9 @@ jobs:
         run: |
           python fetch_baserow_data.py
 
-      - name: Analyze data with DeepSeek API
-        env:
-          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+      - name: Analyze data dynamically
         run: |
-          python analyze_data.py
+          python auto_analyze.py
 
       - name: Commit and push changes
         run: |
