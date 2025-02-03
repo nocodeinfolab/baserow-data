@@ -1,97 +1,75 @@
 import json
 import pandas as pd
 import matplotlib.pyplot as plt
-import numpy as np
+from statsmodels.tsa.holtwinters import ExponentialSmoothing
+import os
 
-# Load data from JSON
+# Load reservation data
 with open('data.json', 'r') as file:
     data = json.load(file)
 
-# Convert JSON data to a DataFrame
-df = pd.DataFrame(data.get('results', []))
+df = pd.DataFrame(data['results'])
 
-if df.empty:
-    print("⚠️ No data available for analysis.")
-    exit()
+df['Date of Booking'] = pd.to_datetime(df['Date of Booking'])
+df['Expected Check-in Date'] = pd.to_datetime(df['Expected Check-in Date'])
+df['Expected Check-out Date'] = pd.to_datetime(df['Expected Check-out Date'])
+df['Duration of Stay'] = pd.to_numeric(df['Duration of Stay'])
+df['Payable Amount'] = pd.to_numeric(df['Payable Amount'])
+df['Amount Paid'] = pd.to_numeric(df['Amount Paid'])
+df['Pending Amount'] = pd.to_numeric(df['Pending Amount'])
 
-# Infer dataset type based on column names and data patterns
-column_names = df.columns.str.lower()
+df['Booking Month'] = df['Date of Booking'].dt.to_period('M')
 
-# Check for reservation-related data
-if {'date of reservation', 'check-in date', 'checkout date', 'room number reserved'}.issubset(column_names):
-    dataset_type = "Hotel Reservation Data"
-elif {'employee id', 'staff name', 'department', 'role'}.issubset(column_names):
-    dataset_type = "Staff Data"
-elif {'transaction id', 'amount paid', 'payment date'}.issubset(column_names):
-    dataset_type = "Financial Transactions"
-else:
-    dataset_type = "General Data"
+df['Occupancy'] = 1  # Assume each reservation contributes to occupancy
 
-print(f"📊 Detected dataset type: {dataset_type}")
+# Booking Trend Analysis
+booking_trend = df.groupby('Booking Month').size()
+plt.figure(figsize=(10, 5))
+booking_trend.plot(kind='line', marker='o')
+plt.title('Monthly Booking Trends')
+plt.xlabel('Month')
+plt.ylabel('Number of Bookings')
+plt.grid()
+plt.savefig('booking_trend.png')
+plt.close()
 
-insights = {}
+# Revenue Trend Analysis
+revenue_trend = df.groupby('Booking Month')['Payable Amount'].sum()
+plt.figure(figsize=(10, 5))
+revenue_trend.plot(kind='bar', color='blue')
+plt.title('Monthly Revenue Trends')
+plt.xlabel('Month')
+plt.ylabel('Revenue')
+plt.grid()
+plt.savefig('revenue_trend.png')
+plt.close()
 
-if dataset_type == "Hotel Reservation Data":
-    df['check-in date'] = pd.to_datetime(df['check-in date'])
-    df['checkout date'] = pd.to_datetime(df['checkout date'])
-    
-    # Occupancy rate analysis
-    df['stay_duration'] = (df['checkout date'] - df['check-in date']).dt.days
-    avg_occupancy = df['stay_duration'].mean()
-    insights['average_occupancy_days'] = avg_occupancy
-    
-    # Most popular room
-    popular_room = df['room number reserved'].mode()[0]
-    insights['most_popular_room'] = popular_room
+# Predictive Analysis: Occupancy Forecast
+occupancy_series = df.groupby('Expected Check-in Date').size()
+occupancy_series = occupancy_series.asfreq('D').fillna(0)
+model = ExponentialSmoothing(occupancy_series, trend='add', seasonal=None).fit()
+forecast = model.forecast(30)
 
-    # Revenue trends
-    df['revenue'] = df['amount paid']
-    revenue_trend = df.groupby(df['check-in date'].dt.month)['revenue'].sum()
-    
-    plt.figure(figsize=(8, 6))
-    revenue_trend.plot(kind='bar', color='blue')
-    plt.title("Monthly Revenue Trend")
-    plt.xlabel("Month")
-    plt.ylabel("Total Revenue")
-    plt.savefig("revenue_chart.png")
-    insights['revenue_chart'] = "revenue_chart.png"
+plt.figure(figsize=(10, 5))
+occupancy_series.plot(label='Historical Occupancy')
+forecast.plot(label='Forecasted Occupancy', linestyle='dashed')
+plt.title('Occupancy Forecast for Next 30 Days')
+plt.xlabel('Date')
+plt.ylabel('Occupancy Count')
+plt.legend()
+plt.grid()
+plt.savefig('occupancy_forecast.png')
+plt.close()
 
-elif dataset_type == "Staff Data":
-    # Staff distribution by department
-    department_distribution = df['department'].value_counts()
-    
-    plt.figure(figsize=(8, 6))
-    department_distribution.plot(kind='bar', color='green')
-    plt.title("Staff Distribution by Department")
-    plt.xlabel("Department")
-    plt.ylabel("Count")
-    plt.savefig("staff_distribution.png")
-    insights['staff_distribution_chart'] = "staff_distribution.png"
+# Save Analysis Summary
+analysis_results = {
+    "booking_trend_chart": "booking_trend.png",
+    "revenue_trend_chart": "revenue_trend.png",
+    "occupancy_forecast_chart": "occupancy_forecast.png",
+    "summary_statistics": df.describe().to_dict()
+}
 
-elif dataset_type == "Financial Transactions":
-    df['payment date'] = pd.to_datetime(df['payment date'])
-    
-    # Total revenue
-    total_revenue = df['amount paid'].sum()
-    insights['total_revenue'] = total_revenue
-
-    # Revenue trends
-    revenue_trend = df.groupby(df['payment date'].dt.month)['amount paid'].sum()
-    
-    plt.figure(figsize=(8, 6))
-    revenue_trend.plot(kind='line', marker='o', color='purple')
-    plt.title("Monthly Payment Trends")
-    plt.xlabel("Month")
-    plt.ylabel("Total Payments")
-    plt.savefig("payment_trend.png")
-    insights['payment_trend_chart'] = "payment_trend.png"
-
-else:
-    # Default analysis: Show general statistics
-    insights['summary_statistics'] = df.describe().to_dict()
-
-# Save insights
 with open('analysis_results.json', 'w') as file:
-    json.dump(insights, file, indent=4)
+    json.dump(analysis_results, file, indent=4)
 
-print("✅ Analysis completed. Insights saved to analysis_results.json.")
+print("Analysis completed and results saved.")
